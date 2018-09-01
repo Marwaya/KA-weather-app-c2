@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CurrentweatherComponent } from './currentweather/currentweather.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentweatherComponent
   ],
   imports: [
     BrowserModule
