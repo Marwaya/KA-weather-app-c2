@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CurrentweatherComponent } from './currentweather/currentweather.component';
+import {WeatherService} from './weather/weather.service';
 
 @NgModule({
   declarations: [

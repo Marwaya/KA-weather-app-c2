@@ -1,10 +1,162 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--
 <div style="text-align:center">
-  <h1>
-    Local Weather!
-  </h1>
+  
+    <h1 style="background-color:DodgerBlue;">Local Weather!</h1>
   <div> Your city, your forecast, right now</div>
   <h2>Current Weather</h2>
-  <app-currentweather> </app-currentweather>
+  
+  <app-currentweather></app-currentweather>
 </div>
+-->
 
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #2d30ddb7;
+      padding: 10px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 450px;
+      /* only for demonstration, should be removed */
+      background: #FFFF00;
+      padding: 20px;
+
+      
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #e6e6fa;
+      height: 300px;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #2d30ddb7;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <h2>Local Weather</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#"><font color="blue">City</font></a></li>
+        <li><a href="#"><font color="blue">Forcast</font></a></li>
+        <li><a href="#"><font color="blue">Description</font></a></li>
+        
+      </ul>
+    </nav>
+
+    <body>
+        <div class="icon sun-shower">
+            <div class="cloud"></div>
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+          </div>
+          
+          <div class="icon thunder-storm">
+            <div class="cloud"></div>
+            <div class="lightning">
+              <div class="bolt"></div>
+              <div class="bolt"></div>
+            </div>
+          </div>
+          
+          <div class="icon cloudy">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+          
+          <div class="icon flurries">
+            <div class="cloud"></div>
+            <div class="snow">
+              <div class="flake"></div>
+              <div class="flake"></div>
+            </div>
+          </div>
+          
+          <div class="icon sunny">
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+          </div>
+          
+          <div class="icon rainy">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+          
+          <p></p>
+        </body>
+  </section>
+
+  <footer>
+    <p></p>
+  </footer>
+
+</body>
+
+</html>
